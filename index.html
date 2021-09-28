@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> List </title>
+	<script src="js/listOfDoingWork.js" type="text/javascript"></script>
+
+	<style type="text/css">
+	#warning-message { display: none; }
+    @media only screen and (orientation:portrait){
+        #wrapper { display:none; }
+        #warning-message { display:block; }
+    }
+
+    @media only screen and (orientation:landscape){
+        #warning-message { display:none; }
+    }
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/listOfDoingWork.css">
+</head>
+<div id="wrapper">
+<body>
+	<div id="body">
+		<input type="text" id="addingToTheList" style="margin-bottom: 2em" placeholder="Enter Task To Be Added" title="Enter the thing you want to do..." align="center">
+		<button class="Button1" style="margin-bottom: 2em" id="button1" onclick="addingTask()" onmousedown="ChangingTheMouseToGrabbing()" onmouseup="ChangingTheMouseToPointer()">Add to the list</button><br>
+
+		<input type="text" id="removingFromTheList" style="margin-bottom: 2em" placeholder="Enter Task To Be Removed" title="Enter the thing you have done...">
+		<button class="Button1" style="margin-bottom: 2em" id="button2" onclick="removingTask()" onmousedown="ChangingTheMouseToGrabbing()" onmouseup="ChangingTheMouseToPointer()">Remove from the list</button><br>
+	</div>
+	<div id="list">
+		<h4>List Of The Tasks</h4>
+	</div>
+	<footer>
+		Created By Amaan.
+	</footer>
+</body>
+</div>
+<div id="warning-message" style="font-size: 200%">
+		<center><b>This Website is Only Available In LandScape Mode.<br> Please Rotate Your Device.<br>Created By Amaan.<b></center>
+</div>
+
+</html>
